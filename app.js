@@ -11,7 +11,7 @@ fetch('elements.json')
         <div class="symbol">${element.symbol}</div>
         <div class="atomic-number">${element.atomicNumber}</div>
         <div class="name">${element.name}</div>
-        <div class="discovery">${element.yearDiscovered}</div>
+        <div class="discovery">Discovered ${element.yearDiscovered}</div>
         <br>
       `;
       periodicTable.appendChild(elementDiv);

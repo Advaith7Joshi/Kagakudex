@@ -98,6 +98,27 @@ input
     font-weight: 700;
 }
 
+.atomic-number
+{
+    text-align: center;
+    font-family: "outfit";
+    color: #7f7f7f;
+}
+
+.name
+{
+    text-align: center;
+    font-family: "outfit";
+    font-size: 18px;
+}
+
+.discovery
+{
+    text-align: center;
+    font-size: 12px;
+    font-family: "outfit";
+}
+
 .modal {
     position: fixed;
     top: 0;
