@@ -1,178 +1,165 @@
 /* Import Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-*
-{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
 
-html
-{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-::-webkit-scrollbar
-{
-    display: none;
+::-webkit-scrollbar {
+  display: none;
 }
 
 body {
-    background-color: #F6F8FC;
+  background-color: #f6f8fc;
 }
 
-.header
-{
-    font-family: "outfit";
-    background: url("assets/bg.jpg");
-    background-size: cover;
-    color: #F6F8FC;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 50px;
-    font-weight: 700;
+.header {
+  font-family: "outfit";
+  background: url("assets/bg.jpg");
+  background-size: cover;
+  color: #f6f8fc;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  font-weight: 700;
 }
 
-input
-{
-    border-radius: 20px;
-    box-shadow: #ededed 0 10px 10px;
-    padding: 15px;
-    background-color: white;
-    width: 68%;
-    font-family: "Outfit";
-    margin: 15px;
-    border: none;
-    padding: 18px;
-    font-size: 16px;
-    margin: 2% 1% 0% 12%;
+input {
+  border-radius: 20px;
+  box-shadow: #ededed 0 10px 10px;
+  padding: 15px;
+  background-color: white;
+  width: 68%;
+  font-family: "Outfit";
+  margin: 15px;
+  border: none;
+  padding: 18px;
+  font-size: 16px;
+  margin: 2% 1% 0% 12%;
 }
 
-#search-btn
-{
-    background-color: #5085ff;
-    height: 40px;
-    padding: 12px;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    font-family: "Outfit";
-    box-shadow: #5085ff88 5px 5px 15px;
-    color: white;
-    font-size: 14px;
+#search-btn {
+  background-color: #5085ff;
+  height: 40px;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-family: "Outfit";
+  box-shadow: #5085ff88 5px 5px 15px;
+  color: white;
+  font-size: 14px;
 }
 
-#periodic-table
-{
-    padding: 5% 8%;
-    display: flex;
-    flex-flow: wrap row;
-    justify-content: center;
+#periodic-table {
+  padding: 5% 8%;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: center;
 }
 
-.element
-{
-    border-radius: 20px;
-    box-shadow: #ededed 0 10px 10px;
-    padding: 15px;
-    background-color: white;
-    width: 180px;
-    margin: 15px;
-    transition: .3s;
+.element {
+  border-radius: 20px;
+  box-shadow: #ededed 0 10px 10px;
+  padding: 15px;
+  background-color: white;
+  width: 180px;
+  margin: 15px;
+  transition: 0.3s;
 }
 
-.element:hover
-{
-    background-color: rgb(24, 24, 24);
-    color: #fff;
+.element:hover {
+  background-color: rgb(24, 24, 24);
+  color: #fff;
 }
 
-.symbol
-{
-    text-align: center;
-    font-size: 28px;
-    font-family: "Outfit";
-    font-weight: 700;
+.symbol {
+  text-align: center;
+  font-size: 28px;
+  font-family: "Outfit";
+  font-weight: 700;
 }
 
-.atomic-number
-{
-    text-align: center;
-    font-family: "outfit";
-    color: #7f7f7f;
+.atomic-number {
+  text-align: center;
+  font-family: "outfit";
+  color: #7f7f7f;
 }
 
-.name
-{
-    text-align: center;
-    font-family: "outfit";
-    font-size: 18px;
+.name {
+  text-align: center;
+  font-family: "outfit";
+  font-size: 18px;
 }
 
-.discovery
-{
-    text-align: center;
-    font-size: 12px;
-    font-family: "outfit";
+.discovery {
+  text-align: center;
+  font-size: 12px;
+  font-family: "outfit";
 }
 
 .modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #ffffff;
-    overflow-y: auto;
-  }
-  
-  .modal h2 {
-    font-size: 4rem;
-    margin-bottom: 1rem;
-    font-family: "Outfit", sans-serif;
-    text-align: center;
-    padding: 80px;
-  }
-  
-  .modal p {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-    font-family: "Outfit", sans-serif;
-    padding: 5px 180px;
-  }
-  
-  .modal button {
-    font-size: 20px;
-    background-color: #fff;
-    color: #fff;
-    padding: 20px;
-    margin-left: 95.5vw;
-    font-family: "Outfit", sans-serif;
-    border: none;
-    border-radius: 0.25rem;
-    cursor: pointer;
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  overflow-y: auto;
+}
 
-  .modal button img{
-    width: 30px;
-  }
-  
-  /* Hide the modal when it is not displayed */
-  .modal.hidden {
-    display: none;
-  }
+.modal h2 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  font-family: "Outfit", sans-serif;
+  text-align: center;
+  padding: 80px;
+}
 
-.credits
-{
-    width: 100%;
-    height: 40vh;
-    background-color: #121212;
-    color: white;
-    font-family: "outfit";
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.modal p {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-family: "Outfit", sans-serif;
+  padding: 5px 180px;
+}
+
+.modal button {
+  font-size: 20px;
+  background-color: #fff;
+  color: #fff;
+  padding: 20px;
+  margin-left: 95.5vw;
+  font-family: "Outfit", sans-serif;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.modal button img {
+  width: 30px;
+  position: fixed;
+}
+
+/* Hide the modal when it is not displayed */
+.modal.hidden {
+  display: none;
+}
+
+.credits {
+  width: 100%;
+  height: 40vh;
+  background-color: #121212;
+  color: white;
+  font-family: "outfit";
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
