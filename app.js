@@ -1,8 +1,6 @@
-// Load the JSON file using the fetch() method
 fetch('elements.json')
-  .then(response => response.json()) // Parse the JSON data
+  .then(response => response.json())
   .then(data => {
-    // Create an HTML element for each element in the periodic table
     const periodicTable = document.getElementById('periodic-table');
     data.forEach(element => {
       const elementDiv = document.createElement('div');
@@ -16,16 +14,14 @@ fetch('elements.json')
       `;
       periodicTable.appendChild(elementDiv);
 
-      // Add event listener to display more information when element is clicked
       elementDiv.addEventListener('click', () => {
         displayElementInfo(element);
       });
     });
   })
-  .catch(error => console.error(error)); // Handle any errors
+  .catch(error => console.error(error));
 
 function displayElementInfo(element) {
-  // Create modal element and add content
   const modal = document.createElement('div');
   modal.classList.add('modal');
   modal.innerHTML = `
@@ -52,25 +48,20 @@ function displayElementInfo(element) {
     <p><b>Group</b>: ${element.groupBlock}</p><br>
   `;
 
-  // Add event listener to close modal when close button is clicked
   const closeBtn = modal.querySelector('#close-btn');
   closeBtn.addEventListener('click', () => {
     document.body.removeChild(modal);
   });
 
-  // Append modal to the body element
   document.body.appendChild(modal);
 }
 
 const searchInput = document.getElementById('search-input');
 const searchBtn = document.getElementById('search-btn');
 
-// Add an event listener to the search button
 searchBtn.addEventListener('click', () => {
-  // Get the search term entered by the user
   const searchTerm = searchInput.value.trim().toLowerCase();
 
-  // Search for matching elements in your data
   const matchingElements = elements.filter(element => {
     return (
       element.symbol.toLowerCase().includes(searchTerm) ||
@@ -79,18 +70,14 @@ searchBtn.addEventListener('click', () => {
     );
   });
 
-  // Display the matching elements in the table
   displayElements(matchingElements);
 });
 
 function displayElements(elements) {
-  // Get a reference to the table body
   const tableBody = document.querySelector('#element-table tbody');
 
-  // Clear the table body
   tableBody.innerHTML = '';
 
-  // Loop through the elements and create a table row for each one
   elements.forEach(element => {
     const row = tableBody.insertRow();
 
